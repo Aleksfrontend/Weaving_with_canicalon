@@ -1,0 +1,171 @@
+/* Specification */
+@charset "UTF-8";
+
+/* Loading fonts */
+@font-face {
+	font-family: "MontserratMedium";
+	src: url("../fonts/montserrat/Montserrat-Medium.eot") format("eot"),
+		url("../fonts/montserrat/Montserrat-Medium.woff") format("woff"),
+		url("../fonts/montserrat/Montserrat-Medium.woff2") format("woff2"),
+		url("../fonts/montserrat/Montserrat-Medium.ttf") format("truetype"),
+		url("../fonts/montserrat/Montserrat-Medium.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "MontserratSemibold";
+	src: url("../fonts/montserrat/Montserrat-SemiBold.eot") format("eot"),
+		url("../fonts/montserrat/Montserrat-SemiBold.woff") format("woff"),
+		url("../fonts/montserrat/Montserrat-SemiBold.woff2") format("woff2"),
+		url("../fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype"),
+		url("../fonts/montserrat/Montserrat-SemiBold.svg") format("svg");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "MontserratBold";
+	src: url("../fonts/montserrat/Montserrat-Bold.eot") format("eot"),
+	url("../fonts/montserrat/Montserrat-Bold.woff") format("woff"),
+	url("../fonts/montserrat/Montserrat-Bold.woff2") format("woff2"),
+	url("../fonts/montserrat/Montserrat-Bold.ttf") format("truetype"),
+	url("../fonts/montserrat/Montserrat-Bold.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "InterRegular";
+	src: url("../fonts/inter/Inter-Regular.eot") format("eot"),
+		url("../fonts/inter/Inter-Regular.woff") format("woff"),
+		url("../fonts/inter/Inter-Regular.woff2") format("woff2"),
+		url("../fonts/inter/Inter-Regular.ttf") format("truetype"),
+		url("../fonts/inter/Inter-Regular.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "InterMedium";
+	src: url("../fonts/inter/Inter-Medium.eot") format("eot"),
+		url("../fonts/inter/Inter-Medium.woff") format("woff"),
+		url("../fonts/inter/Inter-Medium.woff2") format("woff2"),
+		url("../fonts/inter/Inter-Medium.ttf") format("truetype"),
+		url("../fonts/inter/Inter-Medium.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "InterSemibold";
+	src: url("../fonts/inter/Inter-SemiBold.eot") format("eot"),
+		url("../fonts/inter/Inter-SemiBold.woff") format("woff"),
+		url("../fonts/inter/Inter-SemiBold.woff2") format("woff2"),
+		url("../fonts/inter/Inter-SemiBold.ttf") format("truetype"),
+		url("../fonts/inter/Inter-SemiBold.svg") format("svg");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "InterBold";
+	src: url("../fonts/inter/Inter-Bold.eot") format("eot"),
+		url("../fonts/inter/Inter-Bold.woff") format("woff"),
+		url("../fonts/inter/Inter-Bold.woff2") format("woff2"),
+		url("../fonts/inter/Inter-Bold.ttf") format("truetype"),
+		url("../fonts/inter/Inter-Bold.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "InikaRegular";
+	src: url("../fonts/inika/Inika-Regular.eot") format("eot"),
+		url("../fonts/inika/Inika-Regular.woff") format("woff"),
+		url("../fonts/inika/Inika-Regular.woff2") format("woff2"),
+		url("../fonts/inika/Inika-Regular.ttf") format("truetype"),
+		url("../fonts/inika/Inika-Regular.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Default setting for body */
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: auto;
+	font-size: 16px;
+	color: #083C3F;
+	font-family: 'InterRegular', sans-serif;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+/* Removing external and internal idents */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'MontserratBold', sans-serif;
+}
+
+/* Remove default styliong for all ul, ol and li */
+ul, ol, li {
+	display: block;
+	list-style: none;
+}
+
+/* Remove underlining and internal indentation from a element */
+a {
+	display: block;
+	padding: 0;
+	text-decoration: none;
+}
+
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+/* Inherit the color for all links when hovered over */
+a:hover {
+	color: inherit;
+}
+
+/* Simplifying work with images */
+img {
+	display: block;
+	max-width: 100%;
+}
+
+/* Inherit the fonts for inputs and buttons, and remove background and borders */
+input, button, textarea, select {
+	font: inherit;
+	font-family: inherit;
+	background: none;
+	background-color: transparent;
+	outline: 0;
+	border: none;
+}
+
+/* Remove  all animations and transitions for people who prefer not to use them */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+

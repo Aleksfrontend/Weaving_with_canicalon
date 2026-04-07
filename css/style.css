@@ -117,6 +117,7 @@ h4,
 h5,
 h6 {
 	font-family: 'MontserratBold', sans-serif;
+	color: #083C3F;
 }
 
 /* Remove default styliong for all ul, ol and li */
@@ -172,14 +173,22 @@ input, button, textarea, select {
 	padding: 120px 0;
 }
 
+.section__wrapper {
+	background: #C2EDEF;
+}
+
 .h2-title {
-	font-family: "MontserratBold";
 	font-size: 36px;
 	line-height: 1.22em;
-	color: #083C3F;
 	margin-bottom: 24px;
 	text-align: center;
 }
+
+.h3-title {
+	font-size: 30px;
+	line-height: 1.27em;
+}
+
 
 .lead__text {
 	font-family: "InterRegular";
@@ -322,6 +331,177 @@ input, button, textarea, select {
 }
 
 /* Our weaving */
-.our-weaving {
-	background: #C2EDEF;
+
+.card-our-weaving__list {
+	gap: 66px;
+}
+.card-our-weaving__item {
+	max-width: 388px;
+	height: 609px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	text-align: center;
+	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-our-weaving__item:hover {
+	transform: translateY(-10px);
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+}
+
+.card-our-weaving__image {
+	width: 100%;
+	height: 352px;
+	border-radius: 20px 20px 0 0;
+	object-fit: cover;
+}
+
+.card-our-weaving__title {
+	margin-top: 36px;
+}
+
+.card-our-weaving__text {
+	font-family: "InterRegular";
+	font-size: 16px;
+	line-height: 1.78em;
+	color: #000;
+	padding: 0 32px;
+	margin-top: 24px;
+}
+
+/* Prices */
+
+.card-prices__list {
+	gap: 66px;
+}
+
+.card-prices__item {
+	width: 388px;
+	/* height: 552px; */
+	background-color: #ffffff;
+	border-radius: 20px;
+	/* text-align: center; */
+	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card-prices__info {
+	padding: 40px;
+	text-align: center;
+	border-radius: 20px 20px 0 0;
+	background: linear-gradient(rgba(191, 243, 245, 0.7)),
+			url("../img/img-breyding.jpg") no-repeat center center/cover;
+}
+
+.card-prices__info_afro {
+	background: linear-gradient(rgba(191, 243, 245, 0.7)),
+			url("../img/img-afro.jpg") no-repeat center center/cover;
+}
+
+.card-prices__info_senegal {
+	background: linear-gradient(rgba(191, 243, 245, 0.7)),
+			url("../img/img-senegal.jpg") no-repeat center center/cover;
+}
+
+.card-prices__info_zizi {
+	background: linear-gradient(rgba(191, 243, 245, 0.7)),
+			url("../img/img-zizi.jpg") no-repeat center center/cover;
+}
+
+.card-prices__info_pontail {
+	background: linear-gradient(rgba(191, 243, 245, 0.7)),
+			url("../img/img-poniteyl.jpg") no-repeat center center/cover;
+}
+
+.card-prices__text {
+	font-family: "InterBold";
+	font-size: 40px;
+	line-height: 1.65em;
+	color: #0E6468;
+	margin-top: 16px;
+}
+
+.card-prices__button {
+	margin-top: 16px;
+}
+
+.card-prices__list-description {
+	margin: 40px;
+}
+
+.card-prices__text-description {
+	font-family: "InterRegular";
+	font-size: 16px;
+	line-height: 1.78em;
+	color: #000;
+	position: relative;
+	padding-left: 40px;
+}
+
+.card-prices__item-description:not(:last-of-type) {
+	margin-bottom: 16px;
+}
+
+.card-prices__text-description::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 26px;
+	height: 26px;
+	background: url(../img/icon-check.png) no-repeat center center/cover;
+	display: inline-block;
+}
+
+/* About Hairdresser */
+
+.about-hairdresser__wrapper {
+	background: linear-gradient(rgba(191, 243, 245, 0.75)),
+							url("../img/about-bg.jpg") no-repeat center center/cover;
+	border-radius: 20px;
+	padding: 40px;
+	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-hairdresser__title_left {
+	text-align: left;
+}
+
+.lead__text_left {
+	text-align: left;
+	margin: 0 0 48px;
+}
+
+
+.about-hairdresser__text{
+	width: 620px;
+}
+
+.achievements__list {
+	margin-bottom: 40px;
+}
+
+.achievements__item {
+	gap: 16px;
+}
+
+.achievements__item:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+
+.sertificate__img {
+	border-radius: 15px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-hairdresser__photo {
+	width: 100%;
+	height: auto;
+	border-radius: 20px;
+	object-fit: cover;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }

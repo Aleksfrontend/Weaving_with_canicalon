@@ -189,7 +189,6 @@ input, button, textarea, select {
 	line-height: 1.27em;
 }
 
-
 .lead__text {
 	font-family: "InterRegular";
 	font-size: 24px;
@@ -198,6 +197,26 @@ input, button, textarea, select {
 	max-width: 728px;
 	margin: 0 auto 48px;
 	text-align: center;
+}
+
+.cta-button {
+	display: block;
+	width: 220px;
+	padding: 16px 48px;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: "InterSemibold";
+	color: #E5F7F8;
+	background-color: #0E6468;
+	border: 2px solid #0E6468;
+	border-radius: 50px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+	background-color: transparent;
+	color: #0E6468;
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* HEADER */
@@ -227,17 +246,17 @@ input, button, textarea, select {
 	transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-.contacts__item:not(:last-child) {
+.contacts-nav__item:not(:last-child) {
 	margin-bottom: 16px;
 }
 
-.contacts__icon {
+.contacts-nav__icon {
 	width: 24px;
 	height: 24px;
 	margin-right: 16px;
 }
 
-.contacts__link {
+.contacts-nav__link {
 	display: inline-block;
 	font-size: 16px;
 	font-family: "MontserratBold";
@@ -245,7 +264,7 @@ input, button, textarea, select {
 	transition: color 0.3s ease;
 }
 
-.contacts__link:hover {
+.contacts-nav__link:hover {
 	color: #E5F7F8;
 	text-shadow: 2px 0px 2px #213a3c66;
 	transition: color 0.3s ease, text-shadow 0.3s ease;
@@ -270,25 +289,6 @@ input, button, textarea, select {
 	line-height: 30px;
 	color: #083C3F;
 	margin-bottom: 42px;
-}
-
-.cta-button {
-	display: inline-block;
-	padding: 16px 48px;
-	font-size: 20px;
-	line-height: 30px;
-	font-family: "InterSemibold";
-	color: #E5F7F8;
-	background-color: #0E6468;
-	border: 2px solid #0E6468;
-	border-radius: 50px;
-	transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.cta-button:hover {
-	background-color: transparent;
-	color: #0E6468;
-	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .offer__photo {
@@ -424,7 +424,7 @@ input, button, textarea, select {
 }
 
 .card-prices__button {
-	margin-top: 16px;
+	margin: 16px auto 0;
 }
 
 .card-prices__list-description {
@@ -574,6 +574,124 @@ details::-webkit-details-marker {
 }
 
 
+/* Trendy Braids */
+
+.trendy-braids__big-title {
+	font-family: "MontserratSemibold";
+	font-size: 57px;
+	line-height: 1.21em;
+	color: #083C3F;
+	margin-bottom: 24px;
+	text-align: center;
+}
+
+.trendy-braids__text {
+	font-family: "InterMedium";
+	font-size: 20px;
+	line-height: 1.5em;
+	color: #083C3F;
+	max-width: 825px;
+	margin: 0 auto 40px;
+	text-align: center;
+}
+
+.trendy-braids__button {
+	margin: 0 auto;
+}
+
+
+/* Contacts */
+
+.contacts__list {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.contacts_mb {
+	margin-bottom: 24px;
+}
+
+.contacts__item {
+	background: #ffffff;
+	border: 1px solid rgba(8, 60, 63, 0.12);
+	border-radius: 20px;
+	padding: 24px 32px;
+	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contacts__info {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.contacts__info:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.contacts__link, .contacts__text {
+	font-family: "InterRegular";
+	font-size: 16px;
+	color: #000000;
+	text-shadow: 0px 0px 0px rgba(33, 58, 60, 0.4);
+	transition: text-shadow 0.3s ease;
+}
+
+.contacts__link:hover {
+	text-shadow: 2px 2px 1px rgba(30, 53, 55, 0.4);
+	transition: text-shadow 0.3s ease;
+}
+
+.contacts__name {
+	font-family: "InterRegular";
+	font-size: 24px;
+	line-height: 1.25em;
+	color: #000000;
+}
+
+.contacts__social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 10px;
+	background-color: #E5F7F8;
+	transition: background-color 0.3s ease;
+}
+
+.contacts__social-link:hover {
+	background-color: #C2EDEF;
+	transition: background-color 0.3s ease;
+}
+
+.contacts__social {
+	width: 28px;
+	height: 28px;
+}
+
+.contacts__map {
+	width: 100%;
+	height: 100%;
+	border: 1px solid rgba(8, 60, 63, 0.12);
+	border-radius: 20px;
+	overflow: hidden;
+	padding: 24px 32px;
+	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contacts__map-google {
+	border: none;
+	border-radius: 20px;
+	/* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); */
+}
+
+/* Footer */
+.footer {
+	background-color: #0E6468;
+	padding: 24px 0;
+}
 
 
 @media (max-width: 767px) {
@@ -584,3 +702,4 @@ details::-webkit-details-marker {
 		padding-right: 20px;
 	}
 }
+

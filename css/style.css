@@ -219,12 +219,26 @@ input, button, textarea, select {
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.wrapper__border {
+	background: #ffffff;
+	border: 1px solid rgba(8, 60, 63, 0.12);
+	border-radius: 20px;
+	padding: 24px 32px;
+	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
 /* HEADER */
 
 .header {
 	background: linear-gradient(rgba(191, 243, 245, 0.75)),
 							url("../img/hero-bg.jpg") no-repeat center center/cover;
 	padding: 24px 0 120px;
+}
+
+.burger {
+	background: url(../img/burger.svg) no-repeat center center/cover;
+	width: 32px;
+	height: 32px;
 }
 
 .nav__list {
@@ -246,6 +260,12 @@ input, button, textarea, select {
 	transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
+.contacts-nav__item {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
 .contacts-nav__item:not(:last-child) {
 	margin-bottom: 16px;
 }
@@ -253,7 +273,7 @@ input, button, textarea, select {
 .contacts-nav__icon {
 	width: 24px;
 	height: 24px;
-	margin-right: 16px;
+	/* margin-right: 16px; */
 }
 
 .contacts-nav__link {
@@ -272,23 +292,22 @@ input, button, textarea, select {
 
 .offer {
 	margin-top: 120px;
-
 }
 
 .offer__title {
 	font-family: "MontserratSemibold";
 	font-size: 60px;
-	line-height: 72px;
+	line-height: 1.21em;
 	color: #083C3F;
-	margin-bottom: 42px;
+	margin-bottom: 40px;
 }
 
 .offer__text {
 	font-family: "InterMedium";
 	font-size: 20px;
-	line-height: 30px;
+	line-height: 1.5em;
 	color: #083C3F;
-	margin-bottom: 42px;
+	margin-bottom: 40px;
 }
 
 .offer__photo {
@@ -326,9 +345,11 @@ input, button, textarea, select {
 	font-size: 57px;
 	line-height: 1.21em;
 	color: #083C3F;
-	margin-bottom: 24px;
+	/* margin-bottom: 24px; */
 	text-align: center;
 }
+
+
 
 /* Our weaving */
 
@@ -337,7 +358,8 @@ input, button, textarea, select {
 }
 .card-our-weaving__item {
 	max-width: 388px;
-	height: 609px;
+	/* height: 609px; */
+	/* padding-bottom: 32px; */
 	background-color: #ffffff;
 	border-radius: 20px;
 	text-align: center;
@@ -360,7 +382,7 @@ input, button, textarea, select {
 }
 
 .card-our-weaving__title {
-	margin-top: 36px;
+	margin-top: 32px;
 }
 
 .card-our-weaving__text {
@@ -368,7 +390,7 @@ input, button, textarea, select {
 	font-size: 16px;
 	line-height: 1.78em;
 	color: #000;
-	padding: 0 32px;
+	padding: 0 32px 32px;
 	margin-top: 24px;
 }
 
@@ -456,15 +478,8 @@ input, button, textarea, select {
 	display: inline-block;
 }
 
-/* About Hairdresser */
 
-.about-hairdresser__wrapper {
-	background: linear-gradient(rgba(191, 243, 245, 0.75)),
-							url("../img/about-bg.jpg") no-repeat center center/cover;
-	border-radius: 20px;
-	padding: 40px;
-	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
-}
+/* About Hairdresser */
 
 .about-hairdresser__title_left {
 	text-align: left;
@@ -477,7 +492,7 @@ input, button, textarea, select {
 
 
 .about-hairdresser__text{
-	width: 620px;
+	max-width: 620px;
 }
 
 .achievements__list {
@@ -492,6 +507,11 @@ input, button, textarea, select {
 	margin-bottom: 16px;
 }
 
+.sertificate__list {
+	display: flex;
+	gap: 16px;
+	flex-wrap: wrap;
+}
 
 .sertificate__img {
 	border-radius: 15px;
@@ -507,10 +527,6 @@ input, button, textarea, select {
 }
 
 /* FAQ */
-
-/* .faq {
-	padding: 120px 0;
-} */
 
 .faq__cards {
 	display: grid;
@@ -612,14 +628,6 @@ details::-webkit-details-marker {
 	margin-bottom: 24px;
 }
 
-.contacts__item {
-	background: #ffffff;
-	border: 1px solid rgba(8, 60, 63, 0.12);
-	border-radius: 20px;
-	padding: 24px 32px;
-	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
-}
-
 .contacts__info {
 	display: flex;
 	align-items: center;
@@ -636,6 +644,10 @@ details::-webkit-details-marker {
 	color: #000000;
 	text-shadow: 0px 0px 0px rgba(33, 58, 60, 0.4);
 	transition: text-shadow 0.3s ease;
+}
+
+.contacts__text_fz {
+	font-size: 14px;
 }
 
 .contacts__link:hover {
@@ -674,11 +686,6 @@ details::-webkit-details-marker {
 .contacts__map {
 	width: 100%;
 	height: 100%;
-	border: 1px solid rgba(8, 60, 63, 0.12);
-	border-radius: 20px;
-	overflow: hidden;
-	padding: 24px 32px;
-	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
 }
 
 .contacts__map-google {
@@ -689,10 +696,31 @@ details::-webkit-details-marker {
 
 /* Footer */
 .footer {
-	background-color: #0E6468;
-	padding: 24px 0;
+	background-color: #249EA6;
+	padding: 48px 0 16px;
 }
 
+.contacts__info_footer {
+	margin-top: 16px;
+}
+
+.footer__copyright {
+	font-family: "InikaRegular";
+	font-size: 16px;
+	color: #E5F7F8;
+	margin-top: 24px;
+	text-shadow: 0px 0px 0px rgba(33, 58, 60, 0.4);
+	transition: text-shadow 0.3s ease;
+}
+
+.footer__link {
+	display: inline-block;
+	font-family: "InikaRegular";
+	/* font-size: 10px; */
+	color: #E5F7F8;
+	text-shadow: 0px 0px 0px rgba(33, 58, 60, 0.4);
+	transition: text-shadow 0.3s ease;
+}
 
 @media (max-width: 767px) {
 
@@ -703,3 +731,302 @@ details::-webkit-details-marker {
 	}
 }
 
+@media (max-width: 1400px) {
+
+	.contacts__text_fz {
+	font-size: 12px;
+	}
+
+
+}
+
+@media (max-width: 1199px) {
+	.nav__link {
+		font-size: 16px;
+	}
+
+	.contacts__icon_d-none, .contacts-nav__icon_d-none {
+		display: none;
+	}
+
+	.contacts-nav__item {
+		gap: 12px;
+	}
+
+	.contacts-nav__link {
+		font-size: 14px;
+	}
+
+	.offer {
+		margin-top: 80px;
+	}
+
+	.offer__title {
+		font-size: 40px;
+		margin-bottom: 32px;
+	}
+
+		.offer__text {
+			font-size: 16px;
+			margin-bottom: 32px;
+		}
+
+	.customer-appeal__title {
+		font-size: 48px;
+	}
+
+	.h3-title {
+		font-size: 24px;
+	}
+
+	.card-our-weaving__text {
+		margin-top: 16px;
+		padding: 0 16px 16px;
+	}
+
+	.trendy-braids__big-title {
+		font-size: 48px;
+
+	}
+}
+
+@media (max-width: 991px) {
+	.section {
+		padding: 80px 0;
+	}
+
+	.offer__photo {
+		display: none;
+	}
+
+	.contacts-nav {
+	margin-top: 16px;
+	}
+
+	.contacts-nav__list {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+	}
+
+	.contacts-nav__item:not(:last-child) {
+		margin-bottom: 0;
+		margin-right: 16px;
+	}
+
+	.customer-appeal__title {
+		font-size: 40px;
+	}
+
+	.h2-title {
+		font-size: 32px;
+	}
+
+	.lead__text {
+		font-size: 22px;
+	}
+
+	.card-our-weaving__list, .card-prices__list {
+		gap: 32px;
+	}
+
+	.card-our-weaving__item, .card-prices__item {
+		max-width: 332px;
+	}
+
+	.about-hairdresser__photo {
+		display: none;
+	}
+
+	.contacts__map {
+		margin-top: 16px;
+	}
+
+	.nav__list_footer {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+	}
+
+	.contacts__icon {
+		width: 24px;
+		height: 24px;
+	}
+
+	.contacts__link {
+		font-size: 14px;
+	}
+
+}
+
+
+@media (max-width: 767px) {
+	.offer__title {
+		font-size: 32px;
+	}
+
+	.customer-appeal__title {
+		font-size: 32px;
+	}
+
+	.h2-title {
+		font-size: 28px;
+	}
+
+	.lead__text {
+		font-size: 18px;
+	}
+
+	.card-our-weaving__item, .card-prices__item {
+		max-width: 70%;
+	}
+
+	.contacts-nav {
+	margin-top: 16px;
+	}
+
+	.contacts-nav__list {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+	}
+
+	.contacts-nav__item:not(:last-child) {
+		margin-bottom: 0;
+		margin-right: 16px;
+	}
+
+	.footer__nav, .contacts__info_footer {
+		margin-bottom: 16px;
+	}
+}
+
+@media (max-width: 575px) {
+	.header {
+			padding-bottom: 40px;
+		}
+.offer {
+		margin-top: 40px;
+	}
+.offer__title {
+	font-size: 22px;
+	margin-bottom: 16px;
+}
+
+.offer__text {
+	font-size: 14px;
+	margin-bottom: 16px;
+}
+
+.cta-button {
+	width: 100%;
+	text-align: center;
+}
+
+.section {
+	padding: 40px 0;
+}
+
+.customer-appeal__title {
+	font-size: 22px;
+}
+
+.h2-title {
+	font-size: 18px;
+	margin-bottom: 12px;
+}
+
+.lead__text {	font-size: 14px;
+	margin-bottom: 16px;
+}
+
+	.card-our-weaving__item,
+	.card-prices__item {
+		max-width: 100%;
+	}
+
+	.card-our-weaving__image {
+		height: 220px;
+	}
+
+	.h3-title {
+		font-size: 16px;
+	}
+
+	.card-our-weaving__title {
+		margin-top: 16px;
+	}
+
+	.card-our-weaving__text {
+		margin-top: 14px;
+		padding: 0 14px 14px;
+	}
+
+	.card-our-weaving__list,
+	.card-prices__list {
+		gap: 12px;
+	}
+
+	.card-prices__info {
+		padding: 20px;
+	}
+
+	.card-prices__text {
+		font-size: 24px;
+		line-height: 1.3em;
+	}
+
+	.card-prices__list-description {
+		margin: 20px;
+	}
+
+	.sertificate__list {
+		justify-content: center;
+	}
+
+	.faq__question {
+		font-size: 16px;
+	}
+
+	.faq__answer {
+		padding: 0 22px 16px;
+		font-size: 14px;
+	}
+
+	.trendy-braids__big-title {
+		font-size: 24px;
+		margin-bottom: 16px;
+	}
+
+	.trendy-braids__text {
+		font-size: 16px;
+		margin: 0px auto 16px;
+	}
+
+	.wrapper__border {
+		padding: 16px;
+	}
+
+	.contacts__info {
+		gap: 8px;
+	}
+
+	.contacts__link {
+		font-size: 12px;
+	}
+
+	.contacts__name {
+		font-size: 16px;
+	}
+
+	.contacts__link,
+	.contacts__text {
+		font-size: 12px;
+	}
+
+	.footer__text {
+		font-size: 14px;
+	}
+	
+}

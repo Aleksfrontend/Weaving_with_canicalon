@@ -234,10 +234,14 @@ input, button, textarea, select {
 } */
 
 .header {
-	background: rgb(195 232 231);
-
-	padding: 24px 0;
-	position: relative;
+	position: sticky;
+	top: 0;
+	background: rgba(195, 232, 231, 0.75);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	padding: 16px 0;
+	z-index: 999;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
 
 .burger {

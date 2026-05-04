@@ -3,20 +3,20 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Канікалон</title>
+		<title>Канекалон</title>
 		<meta name="theme-color" content="#249EA6" />
-		<meta name="description" content="Канікалон – ідеальне рішення для яскравих та стильних зачісок" />
+		<meta name="description" content="Канекалон – ідеальне рішення для яскравих та стильних зачісок" />
 		<meta
 			name="keywords"
-			content="канікалон, плетення, волосся, зачіска, салон, Павлоград, каникалон, плетение, волосы."
+			content="канекалон, плетення, волосся, зачіска, салон, Павлоград, каникалон, плетение, волосы."
 		/>
 		<link rel="shortcut icon" href="img/favicon-alteya.png" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="img/favicon-alteya-ati.png" />
-		<meta property="og:title" content="Канікалон" />
-		<meta property="og:description" content="Канікалон - ідеальне рішення для яскравих та стильних зачісок" />
+		<meta property="og:title" content="Канекалон" />
+		<meta property="og:description" content="Канекалон - ідеальне рішення для яскравих та стильних зачісок" />
 		<meta property="og:type" content="article" />
-		<meta property="og:image" content="img/first-screen-kanikalon.png" />
-		<meta property="og:site_name" content="Канікалон" />
+		<meta property="og:image" content="img/first-screen-kanekalon.png" />
+		<meta property="og:site_name" content="Канекалон" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,6 +26,631 @@
 			href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body></body>
+	<body id="top">
+		<header id="header" class="header">
+			<div class="container container__burger container__wrapper">
+				<div class="row align-items-center">
+					<div class="col-6 col-sm-3 col-md-2 logo">
+						<a href="#top" class="logo__link">
+							<img src="img/logo-alteya.svg" alt="Alteya" class="logo__image" />
+						</a>
+					</div>
+					<div class="col-6 col-sm-9 col-md-10 col-lg-6 d-flex justify-content-end align-items-center">
+						<button type="button" class="burger d-md-none" id="burger" aria-label="Toggle menu"></button>
+						<nav class="nav d-none d-md-flex">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a href="#our-weaving" class="nav__link">Коси</a>
+								</li>
+								<li class="nav__item">
+									<a href="#prices" class="nav__link">Ціни</a>
+								</li>
+								<li class="nav__item">
+									<a href="#about-hairdresser" class="nav__link">Про перукаря</a>
+								</li>
+								<li class="nav__item">
+									<a href="#faq" class="nav__link">Питання</a>
+								</li>
+								<li class="nav__item">
+									<a href="#contacts" class="nav__link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-sm-6 col-lg-2 col-md-6 d-none d-sm-flex">
+						<div class="contacts-nav">
+							<div class="contacts__info">
+								<img src="img/icon-map.svg" alt="Геолокація" class="contacts__icon contacts__icon_d-none" />
+								<p class="contacts__text contacts__text_fz">м.Павлоград, вул.Західнодонбаська, 11/2</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-2 col-md-6 d-none d-sm-flex justify-content-end">
+						<div class="contacts-nav">
+							<ul class="contacts-nav__list">
+								<li class="contacts-nav__item aign-items-center">
+									<img src="img/icon-tel.svg" alt="Телефон" class="contacts-nav__icon contacts-nav__icon_d-none" />
+									<a href="tel:+380963611119" class="contacts-nav__link">(096) 361-11-19</a>
+								</li>
+								<li class="contacts-nav__item">
+									<img src="img/icon-tel.svg" alt="Телефон" class="contacts-nav__icon contacts-nav__icon_d-none" />
+									<a href="tel:+380663991371" class="contacts-nav__link">(066) 399-13-71</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Burger Menu Popup -->
+				<div class="burger-popup" id="burgerPopup">
+					<nav class="burger-popup__nav">
+						<ul class="burger-popup__list">
+							<li class="burger-popup__item">
+								<a href="#our-weaving" class="burger-popup__link">Коси</a>
+							</li>
+							<li class="burger-popup__item">
+								<a href="#prices" class="burger-popup__link">Ціни</a>
+							</li>
+							<li class="burger-popup__item">
+								<a href="#about-hairdresser" class="burger-popup__link">Про перукаря</a>
+							</li>
+							<li class="burger-popup__item">
+								<a href="#faq" class="burger-popup__link">Питання</a>
+							</li>
+							<li class="burger-popup__item">
+								<a href="#contacts" class="burger-popup__link">Контакти</a>
+							</li>
+						</ul>
+						<ul class="burger-popup__contacts">
+							<li class="burger-popup__contact-item">
+								<a href="tel:+380963611119" class="burger-popup__contact-link">(096) 361-11-19</a>
+							</li>
+							<li class="burger-popup__contact-item">
+								<a href="tel:+380663991371" class="burger-popup__contact-link">(066) 399-13-71</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="section section__first-screen first-screen" id="first-screen">
+				<div class="container">
+					<div class="offer">
+						<div class="row align-items-center">
+							<div class="col-lg-7">
+								<h1 class="offer__title">Коси з канекалоном. Твоя індивідуальність.</h1>
+								<p class="offer__text">
+									Перетворіться за допомогою яскравих та стильних кіс! Від класичних афрокіс до сміливих експериментів з
+									кольором і текстурою - втілимо ваші найсміливіші ідеї в життя!
+								</p>
+								<a href="#contacts" class="cta-button">Записатися</a>
+							</div>
+							<div class="col-lg-5 d-flex justify-content-center">
+								<div class="offer__image">
+									<img src="img/img-offer.jpg" alt="Канекалон" class="offer__photo" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section customer-appeal">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<p class="customer-appeal__title">Ми робимо вас впевненими, стильними та індивідуальними</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section__wrapper our-weaving" id="our-weaving">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h2 class="h2-title">Коси, які ми плетемо з канекалоном</h2>
+							<p class="lead__text">
+								Довірте свій образ майстрам салону — ми підберемо ідеальний варіант кіс із канекалоном, який підкреслить
+								вашу індивідуальність.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="cards-our-weaving">
+							<div class="col-lg-12">
+								<ul class="card-our-weaving__list d-flex flex-wrap justify-content-center">
+									<li class="card-our-weaving__item">
+										<img src="img/img-breyding.jpg" alt="Брейдинг" class="card-our-weaving__image" />
+										<h3 class="h3-title card-our-weaving__title">Брейдінг</h3>
+										<p class="card-our-weaving__text">
+											Це класичні французькі коси, які щільно заплітаються вздовж голови й можуть бути як тонкими, так і
+											ширшими.
+										</p>
+									</li>
+									<li class="card-our-weaving__item">
+										<img src="img/img-afro.jpg" alt="Афроплетіння" class="card-our-weaving__image" />
+										<h3 class="h3-title card-our-weaving__title">Афроплетіння</h3>
+										<p class="card-our-weaving__text">
+											Безліч невеликих тонких кісок, що заплітаються по всій голові. Можуть бути різної товщини та
+											довжини.
+										</p>
+									</li>
+									<li class="card-our-weaving__item">
+										<img src="img/img-senegal.jpg" alt="Сенегальські коси" class="card-our-weaving__image" />
+										<h3 class="h3-title card-our-weaving__title">Сенегальські</h3>
+										<p class="card-our-weaving__text">
+											Створюються шляхом скручування двох пасом канекалону, які утворюють спіральний джгут.
+										</p>
+									</li>
+									<li class="card-our-weaving__item">
+										<img src="img/img-zizi.jpg" alt="Зізі" class="card-our-weaving__image" />
+										<h3 class="h3-title card-our-weaving__title">Зізі</h3>
+										<p class="card-our-weaving__text">
+											Коси з вже готового тонкого матеріалу, які швидко вплітаються у волосся.
+										</p>
+									</li>
+									<li class="card-our-weaving__item">
+										<img src="img/img-afro-thickening.jpg" alt="Афрозагущення" class="card-our-weaving__image" />
+										<h3 class="h3-title card-our-weaving__title">Афрозагущення</h3>
+										<p class="card-our-weaving__text">
+											Збільшення об'єму або додавання кольорових пасом до волосся, що базується на кріпленні штучного
+											матеріалу через мікрокіски.
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section prices" id="prices">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h2 class="h2-title">Скільки це коштує</h2>
+							<p class="lead__text">
+								Ціна плетіння з канекалоном залежить від обсягу роботи, кількості кіс та складності плетіння — ми завжди
+								попередньо узгоджуємо вартість.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="cards-prices">
+							<div class="col-lg-12">
+								<ul class="card-prices__list d-flex flex-wrap justify-content-center">
+									<li class="card-prices__item">
+										<div class="card-prices__info">
+											<h3 class="h3-title card-prices__title">Брейдінг</h3>
+											<p class="card-prices__text">від 1500&#8372;</p>
+											<a href="#contacts" class="cta-button card-prices__button">Записатися</a>
+										</div>
+										<ul class="card-prices__list-description">
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Підготовка волосся</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Поділ на зони (розмітка)</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Плетіння (основний процес)</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Фінішна обробка</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Фіксація кінців</p>
+											</li>
+										</ul>
+									</li>
+									<li class="card-prices__item">
+										<div class="card-prices__info card-prices__info_afro">
+											<h3 class="h3-title card-prices__title">Афроплетіння</h3>
+											<p class="card-prices__text">від 4800&#8372;</p>
+											<a href="#contacts" class="cta-button card-prices__button">Записатися</a>
+										</div>
+										<ul class="card-prices__list-description">
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Підготовка волосся</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Поділ на зони (розмітка)</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Закріплення (точковий метод)</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Плетіння коси</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Фіксація кінців</p>
+											</li>
+										</ul>
+									</li>
+									<li class="card-prices__item">
+										<div class="card-prices__info card-prices__info_senegal">
+											<h3 class="h3-title card-prices__title">Сенегальські</h3>
+											<p class="card-prices__text">від 4800&#8372;</p>
+											<a href="#contacts" class="cta-button card-prices__button">Записатися</a>
+										</div>
+										<ul class="card-prices__list-description">
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Підготовка волосся</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Поділ на зони (розмітка)</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Закріплення (точковий метод)</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Скручування (Твіст)</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Фіксація кінців</p>
+											</li>
+										</ul>
+									</li>
+									<li class="card-prices__item">
+										<div class="card-prices__info card-prices__info_zizi">
+											<h3 class="h3-title card-prices__title">Зізі</h3>
+											<p class="card-prices__text">від 4800&#8372;</p>
+											<a href="#contacts" class="cta-button card-prices__button">Записатися</a>
+										</div>
+										<ul class="card-prices__list-description">
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Підготовка волосся</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Поділ на зони (розмітка)</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Закріплення зізі (метод петлі)</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Плетіння</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Фіксація кінців</p>
+											</li>
+										</ul>
+									</li>
+									<li class="card-prices__item">
+										<div class="card-prices__info card-prices__info_afro-thickening">
+											<h3 class="h3-title card-prices__title">Афрозагущення</h3>
+											<p class="card-prices__text">від 1000&#8372;</p>
+											<a href="#contacts" class="cta-button card-prices__button">Записатися</a>
+										</div>
+										<ul class="card-prices__list-description">
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Підготовка волосся</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Плетіння каркаса</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Фіксація донорського волосся</p>
+											</li>
+											<li class="card-prices__item-description">
+												<p class="card-prices__text-description">Фінішна обробка</p>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section__wrapper about-hairdresser" id="about-hairdresser">
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-between about-hairdresser__wrapper">
+						<div class="col-lg-7">
+							<div class="about-hairdresser__wrapper1">
+								<h2 class="h2-title about-hairdresser__title about-hairdresser__title_left">Ваш перукар Олена</h2>
+								<p class="lead__text lead__text_left about-hairdresser__text">
+									Наш перукар - це не просто майстер, а справжній художник, який створює шедеври на голові кожного
+									клієнта.
+								</p>
+								<ul class="achievements__list">
+									<li class="achievements__item d-flex align-items-center">
+										<img src="img/icon-time.svg" alt="Час" class="achievements__icon" />
+										<p class="achievements__text">7 років професійної діяльності</p>
+									</li>
+									<li class="achievements__item d-flex align-items-center">
+										<img src="img/icon-smile.svg" alt="Посмішка" class="achievements__icon" />
+										<p class="achievements__text">1000+ задоволених клієнтів</p>
+									</li>
+									<li class="achievements__item d-flex align-items-center">
+										<img src="img/icon-sertificat.svg" alt="Сертифікат" class="achievements__icon" />
+										<p class="achievements__text">3 сертифіката</p>
+									</li>
+								</ul>
+								<ul class="sertificate__list">
+									<li class="sertificate__item">
+										<img src="img/sert-weaving.jpg" alt="Сертифікат 'Плетеие Де-комплекта'" class="sertificate__img" />
+									</li>
+									<li class="sertificate__item">
+										<img src="img/sert-alt-kare.jpg" alt="Сертифікат 'Альтернативное каре'" class="sertificate__img" />
+									</li>
+									<li class="sertificate__item">
+										<img src="img/sert-man.jpg" alt="Сертифікат 'Raining man'" class="sertificate__img" />
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-5 d-flex justify-content-center">
+							<div class="about-hairdresser__image">
+								<img src="img/img-master-gelun.jpg" alt="Олена - майстер-перукар" class="about-hairdresser__photo" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section faq" id="faq">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h2 class="h2-title">Про що питають наші клієнти</h2>
+							<p class="lead__text">
+								Щоб ви без сумнівів записувалися на плетіння, ми зібрали відповіді на всі запитання, які допоможуть
+								зробити правильний вибір
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="faq__cards">
+								<details class="faq__item">
+									<summary class="faq__question">Чи псує канекалон волосся?</summary>
+									<div class="faq__answer">
+										<p>
+											Саме по собі плетіння з канекалоном не псує волосся, якщо воно виконане правильно. Пошкодження
+											волосся може виникнути через такі чинники:
+										</p>
+										<p>
+											а) занадто сильний натяг під час плетіння, що може призвести до так званої тракційної алопеції
+											(випадання волосся);
+										</p>
+										<p>б) неправильний догляд, наприклад, агресивне миття або використання гарячих інструментів;</p>
+										<p>в) надто довге носіння кіс, що може спричинити заплутування волосся.</p>
+									</div>
+								</details>
+								<details class="faq__item">
+									<summary class="faq__question">Як довго тримаються коси з канекалоном?</summary>
+									<div class="faq__answer">
+										<p>
+											Тривалість залежить від типу плетіння та догляду, але зазвичай вони можуть триматися від 4 до 8
+											тижнів.
+										</p>
+									</div>
+								</details>
+								<details class="faq__item">
+									<summary class="faq__question">Чи можна мити голову з косами з канекалоном?</summary>
+									<div class="faq__answer">
+										<p>
+											Так, можна. Рекомендується використовувати м'який шампунь, наносячи його губкою на шкіру голови та
+											проділи, і уникати надмірного тертя, щоб не пошкодити коси.
+										</p>
+										<p>
+											Уникайте використання бальзамів і масок на штучному матеріалі, оскільки вони можуть його
+											пошкодити.
+										</p>
+										<p>Не сушіть канекалон гарячим феном і не використовуйте термобігуді або випрямляч.</p>
+									</div>
+								</details>
+								<details class="faq__item">
+									<summary class="faq__question">Чи можна фарбувати волосся з канекалоном?</summary>
+									<div class="faq__answer">
+										<p>
+											Канекалон не фарбується, тому рекомендується вибирати колір перед плетінням. Якщо хочете змінити
+											колір, потрібно замінити коси.
+										</p>
+									</div>
+								</details>
+								<details class="faq__item">
+									<summary class="faq__question">Чи можна спати з косами з канекалоном?</summary>
+									<div class="faq__answer">
+										<p>
+											Так, можна. Рекомендується заплітати зачіску в нетугу косу для запобігання сплутуванню канекалону.
+										</p>
+									</div>
+								</details>
+								<details class="faq__item">
+									<summary class="faq__question">Чи можна використовувати канекалон повторно?</summary>
+									<div class="faq__answer">
+										<p>При заплетенні зачісок методом ДЕ-комплекту комплект можна використовувати до 3-х разів.</p>
+										<p>
+											Комплекти для афрокіс, зізі та сенегальських кіс використовуються один раз, оскільки вони не
+											розплітаються, а знімаються шляхом обрізання.
+										</p>
+									</div>
+								</details>
+								<details class="faq__item">
+									<summary class="faq__question">Якої довжини має бути волосся для плетіння?</summary>
+									<div class="faq__answer">
+										<p>Довжина волосся залежить від виду зачіски. Наприклад, для брейдів зазвичай достатньо 10 см.</p>
+									</div>
+								</details>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section__wrapper trendy-braids">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h2 class="trendy-braids__big-title">Трендові коси для тебе!</h2>
+							<p class="trendy-braids__text">
+								Коси з канекалоном – краса, доступна кожному! Я пропоную професійне вплетення кіс для жінок будь-якого
+								віку. Від яскравих та зухвалих образів для юних модниць до елегантних та витончених зачісок для тих, хто
+								цінує стиль та комфорт. Використовую лише якісний канекалон та гарантую індивідуальний підхід,
+								враховуючи ваші побажання та особливості волосся. Довговічність, комфорт та захоплені погляди оточуючих
+								– ваш новий образ!
+							</p>
+							<a href="#contacts" class="cta-button trendy-braids__button">Записатися</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section contacts" id="contacts">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h2 class="h2-title">Контакти</h2>
+							<p class="lead__text">
+								Ми зібрали всю необхідну інформацію, щоб вам було легко з нами зв’язатися, записатися на плетіння та
+								отримати консультацію
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6">
+							<ul class="contacts__list contacts__list_contacts d-flex flex-wrap justify-content-center">
+								<li class="contacts__item wrapper__border">
+									<h3 class="h3-title contacts_mb">Подзвоніть нам</h3>
+									<div class="contacts__info">
+										<img src="img/icon-tel-cont.svg" alt="Телефон" class="contacts__icon" />
+										<a href="tel:+380963611119" class="contacts__link">(096) 361-11-19</a>
+										<p class="contacts__name">Перукар Олена</p>
+									</div>
+									<div class="contacts__info">
+										<img src="img/icon-tel-cont.svg" alt="Телефон" class="contacts__icon" />
+										<a href="tel:+380663991371" class="contacts__link">(066) 399-13-71</a>
+										<p class="contacts__name">Адміністратор</p>
+									</div>
+								</li>
+								<li class="contacts__item wrapper__border">
+									<h3 class="h3-title contacts_mb">Приходьте до нас</h3>
+									<div class="contacts__info">
+										<img src="img/icon-map.svg" alt="Геолокація" class="contacts__icon" />
+										<p class="contacts__text">м.Павлоград, вуд.Західнодонбаська, 11/2</p>
+									</div>
+								</li>
+								<li class="contacts__item wrapper__border">
+									<h3 class="h3-title contacts_mb">Графік роботи</h3>
+									<div class="contacts__info">
+										<img src="img/icon-time.svg" alt="Графік роботи" class="contacts__icon" />
+										<p class="contacts__text">09:00 - 18:00</p>
+									</div>
+									<div class="contacts__info">
+										<img src="img/icon-calendar.svg" alt="Календар" class="contacts__icon" />
+										<p class="contacts__text">За погодженням</p>
+									</div>
+								</li>
+								<li class="contacts__item wrapper__border">
+									<h3 class="h3-title contacts_mb">Ми у соцмережах</h3>
+									<div class="contacts__info">
+										<a
+											href="https://www.instagram.com/lazer__alteya_pavlograd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+											class="contacts__social-link"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<img src="img/icon-instagram.svg" alt="Instagram" class="contacts__social" />
+										</a>
+										<a
+											href="https://www.tiktok.com/@lovestori261?is_from_webapp=1&sender_device=pc"
+											class="contacts__social-link"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<img src="img/icon-tik-tok.svg" alt="TikTok" class="contacts__social" />
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6">
+							<div class="contacts__map">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.7777349081057!2d35.930026999999995!3d48.499153899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40deb9e95ea2ac8b%3A0x63894853d5ce34c9!2z0KHQsNC70L7QvSBBbHRleWE!5e0!3m2!1sru!2sua!4v1776105041489!5m2!1sru!2sua"
+									width="100%"
+									height="100%"
+									style="border: 0"
+									allowfullscreen=""
+									loading="lazy"
+									referrerpolicy="no-referrer-when-downgrade"
+									class="contacts__map-google wrapper__border"
+								></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="row align-items-center align-items-md-start justify-content-md-between">
+					<div class="col-lg-3 col-md-3 justify-content-center d-flex flex-column align-items-center">
+						<a href="#top" class="logo__link">
+							<img src="img/logo-alteya-footer.svg" alt="Alteya" class="logo__image" />
+						</a>
+						<div class="contacts__info contacts__info_footer">
+							<a
+								href="https://www.instagram.com/lazer__alteya_pavlograd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+								class="contacts__social-link"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img src="img/icon-instagram.svg" alt="Instagram" class="contacts__social" />
+							</a>
+							<a
+								href="https://www.tiktok.com/@lovestori261?is_from_webapp=1&sender_device=pc"
+								class="contacts__social-link"
+							>
+								<img src="img/icon-tik-tok.svg" alt="TikTok" class="contacts__social" />
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<nav class="footer__nav">
+							<ul class="nav__list nav__list_footer">
+								<li class="nav__item">
+									<a href="#our-weaving" class="nav__link">Коси</a>
+								</li>
+								<li class="nav__item">
+									<a href="#prices" class="nav__link">Ціни</a>
+								</li>
+								<li class="nav__item">
+									<a href="#about-hairdresser" class="nav__link">Про перукаря</a>
+								</li>
+								<li class="nav__item">
+									<a href="#faq" class="nav__link">Питання</a>
+								</li>
+								<li class="nav__item">
+									<a href="#contacts" class="nav__link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-md-3 d-flex align-items-center align-items-md-end justify-content-center flex-column">
+						<div class="contacts__info">
+							<img src="img/icon-tel-cont.svg" alt="Телефон" class="contacts__icon" />
+							<a href="tel:+380963611119" class="contacts__link">(096) 361-11-19</a>
+						</div>
+						<div class="contacts__info">
+							<img src="img/icon-tel-cont.svg" alt="Телефон" class="contacts__icon" />
+							<a href="tel:+380663991371" class="contacts__link">(066) 399-13-71</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="footer__copyright d-flex align-items-center justify-content-center">
+							<p class="footer__text">
+								&copy; 2026 Канекалон. &vert;
+								<a href="#" class="footer__link">DAV</a>
+								&vert; Всі права захищені.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
 </html>
